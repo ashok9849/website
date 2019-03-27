@@ -1,0 +1,21 @@
+<table>
+<thead>
+ <tr>
+   <th>id</th>
+   <th>name</th>
+   <th>age</th>
+   <th>salary</th>
+ </tr>
+</thead>
+<tbody>
+  <tr *ngFor = "let employee of employees">
+    <td>{{employee.id | uppercase}}</td>
+    <td>{{employee.name | uppercase}}</td>
+    <td>{{employee.age}}</td>
+    <td>{{employee.salary | currency :  '&#x20B9;'}}</td>
+  </tr>
+  <tr *ngIf = "!employees || employees.length == 0">
+    <td>No Employee to display</td>
+  </tr>
+</tbody>
+</table>

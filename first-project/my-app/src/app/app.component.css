@@ -1,0 +1,11 @@
+*{
+    padding:0px;margin:0px;  box-sizing: border-box;
+
+}
+.main{
+    color:rgb(239, 22, 247);
+    padding: 20px;
+    border: 5px solid blue;
+    max-width:100%;
+    margin-bottom:30px;
+}
